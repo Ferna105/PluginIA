@@ -3,19 +3,32 @@ JuceLibraryCode/
 !JuceLibraryCode/AppConfig.h
 !JuceLibraryCode/JuceHeader.h
 
-# Build directories
-Builds/*/build/
+# Projucer files
+*.jucerfile.bak
+*.jucer.user
+*.jucer.mode1v3
+.juce/
+
+# Build directories and artifacts
+Builds/
+build/
+DerivedData/
 *.app
 *.component
 *.vst
 *.vst3
 *.aax
 *.au
+*.auv2
+*.auv3
+*.bundle
 *.buildinfo
 *.zip
+*.dmg
 
 # macOS specific
 .DS_Store
+._*
 *.mode1v3
 *.mode2v3
 *.moved-aside
@@ -23,11 +36,14 @@ Builds/*/build/
 *.perspectivev3
 *.user
 *.xccheckout
+*.xcscmblueprint
 *.xcuserstate
 xcuserdata/
 .idea/
 *.swp
 *~
+.Spotlight-V100
+.Trashes
 
 # IDE specific
 .vs/
@@ -38,6 +54,9 @@ xcuserdata/
 *.sdf
 *.sln.docstates
 *.vcxproj.filters
+*.cache
+*.VC.db
+*.VC.opendb
 
 # Compiled Object files
 *.slo
@@ -66,7 +85,6 @@ xcuserdata/
 # Executables
 *.exe
 *.out
-*.app
 
 # Audio plugin specific
 *.wav
@@ -74,11 +92,17 @@ xcuserdata/
 *.aiff
 *.fxp
 *.fxb
+*.aupreset
+*.vstpreset
 
 # Project specific temporary files
 **/tmp/
 **/temp/
 **/log/
+**/Debug/
+**/Release/
+**/x64/
+**/x86/
 
 # JUCE Projucer temporary files
 .juce/
@@ -86,4 +110,17 @@ Projucer.exe
 Projucer.app/
 
 # Backup files
-*.bak 
+*.bak
+*~
+*.orig
+
+# CMake build files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+*.cmake
+
+# Code coverage
+*.gcno
+*.gcda
+*.gcov 
