@@ -1,0 +1,89 @@
+# JUCE specific
+JuceLibraryCode/
+!JuceLibraryCode/AppConfig.h
+!JuceLibraryCode/JuceHeader.h
+
+# Build directories
+Builds/*/build/
+*.app
+*.component
+*.vst
+*.vst3
+*.aax
+*.au
+*.buildinfo
+*.zip
+
+# macOS specific
+.DS_Store
+*.mode1v3
+*.mode2v3
+*.moved-aside
+*.pbxuser
+*.perspectivev3
+*.user
+*.xccheckout
+*.xcuserstate
+xcuserdata/
+.idea/
+*.swp
+*~
+
+# IDE specific
+.vs/
+.vscode/
+*.suo
+*.ncb
+*.opensdf
+*.sdf
+*.sln.docstates
+*.vcxproj.filters
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Dependencies
+*.d
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Audio plugin specific
+*.wav
+*.aif
+*.aiff
+*.fxp
+*.fxb
+
+# Project specific temporary files
+**/tmp/
+**/temp/
+**/log/
+
+# JUCE Projucer temporary files
+.juce/
+Projucer.exe
+Projucer.app/
+
+# Backup files
+*.bak 
